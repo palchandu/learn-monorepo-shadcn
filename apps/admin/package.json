@@ -1,10 +1,10 @@
 {
-  "name": "web",
+  "name": "admin",
   "version": "0.0.1",
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev -p 6543 --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -15,7 +15,8 @@
     "next-themes": "^0.4.3",
     "next": "^15.1.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "@workspace/api":"workspace:*"
   },
   "devDependencies": {
     "@types/node": "^20",
